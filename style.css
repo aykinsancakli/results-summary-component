@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  line-height: 1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* GENERAL COMPONENTS */
+.container {
+  max-width: 60rem;
+  box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.15);
+  border-radius: 2rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+/* CARD RESULT BOX */
+.card-result-box {
+  text-align: center;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 2rem;
+  padding: 3.2rem 3.6rem;
+}
+
+.heading-primary {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: hsl(221, 100%, 96%);
+  margin-bottom: 3rem;
+}
+
+.result-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  height: 16rem;
+  max-width: 16rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.result {
+  font-size: 5.2rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+
+.out-of-result {
+  font-size: 1.4rem;
+  color: hsl(241, 100%, 89%);
+  font-weight: 500;
+}
+
+.performance {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 1.6rem;
+}
+
+.result-description {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: hsl(241, 100%, 89%);
+}
+
+/* CARD SUMMARY BOX */
+.card-summary-box {
+  background-color: #fff;
+  border-radius: 2rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 3.2rem 3.6rem;
+}
+
+.summary-heading {
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skill-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 9px;
+  padding: 1rem;
+}
+
+.skill-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.points {
+  margin-left: auto;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.percent {
+  color: #888;
+}
+
+.btn {
+  background-color: hsl(224, 30%, 27%);
+  border: none;
+  border-radius: 30rem;
+  padding: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-top: 1.4rem;
+}
+
+.btn:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.skill-box:nth-child(1) {
+  background-color: rgba(255, 87, 87, 0.1);
+}
+
+.skill-box:nth-child(2) {
+  background-color: rgba(255, 177, 31, 0.1);
+}
+
+.skill-box:nth-child(3) {
+  background-color: rgba(0, 189, 145, 0.1);
+}
+
+.skill-box:nth-child(4) {
+  background-color: rgba(18, 37, 212, 0.1);
+}
+
+.reaction {
+  color: rgb(255, 87, 87);
+}
+
+.memory {
+  color: rgb(255, 177, 31);
+}
+
+.verbal {
+  color: rgb(0, 189, 145);
+}
+
+.visual {
+  color: rgb(18, 37, 212);
+}
+
+@media (max-width: 35em) {
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    height: 100vh;
+  }
+
+  .card-result-box {
+    border-radius: 0;
+  }
+
+  .skill-box {
+    padding: 2rem;
+  }
+
+  .btn {
+    padding: 2rem;
+  }
+}
