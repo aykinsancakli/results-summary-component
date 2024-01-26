@@ -202,4 +202,12 @@ body {
   .btn {
     padding: 2rem;
   }
+
+  .btn:hover {
+    background: hsl(224, 30%, 27%);
+  }
+
+  .btn:active {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
 }
